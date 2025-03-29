@@ -1,0 +1,19 @@
+<form asp-action="GenerarBoleta" method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required />
+    <br>
+    <label>Apellido:</label>
+    <input type="text" name="apellido" required />
+    <br>
+    <label>Correo:</label>
+    <input type="text" name="correo" required />
+    <br>
+    <label>DNI:</label>
+    <input type="text" name="dni" required />
+    <br>
+    <label>Monto Recibido:</label>
+    <input type="text" name="monto" value="@ViewBag.CantidadRecibe" readonly />
+    <br>
+    <button type="submit">Generar Boleta</button>
+    <br>
+</form>
